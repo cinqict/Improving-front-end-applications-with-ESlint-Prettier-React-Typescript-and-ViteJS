@@ -1,0 +1,28 @@
+{
+  "extends": ["config:base"],
+  "timezone": "Europe/Amsterdam",
+  "schedule": ["between 1:00am and 5:00am"],
+  "rebaseWhen": "conflicted",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["^eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "matchPackagePatterns": ["^react"],
+      "groupName": "react"
+    },
+    {
+      "matchPackagePatterns": ["typescript", "^@typescript", "^@types"],
+      "groupName": "typescript"
+    },
+    {
+      "matchPackagePatterns": ["prettier", "lint-staged", "husky"],
+      "groupName": "dev-tools"
+    }
+  ]
+}
