@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "eslint-config-prettier"
+  ],
+  "parserOptions": {
+    "project": ["tsconfig.json"]
+  },
+  "ignorePatterns": ["node_modules"],
+  "plugins": ["react", "unused-imports"],
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-explicit-any": ["error"],
+    "arrow-body-style": ["error", "as-needed"],
+    "curly": "error",
+    "no-useless-return": "error"
+  }
+}
