@@ -9,28 +9,28 @@
     "preview": "vite preview",
     "lint": "eslint ./src --ext .ts,.tsx",
     "format": "prettier 'src/**/*{.ts,tsx,json,html}' --write",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "lint-staged": "^13.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@vitejs/plugin-react": "^2.2.0",
     "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "eslint-plugin-react": "^7.31.10",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
     "typescript": "*",
     "vite": "^3.2.3"

@@ -16,6 +16,11 @@
     "project": ["tsconfig.json"]
   },
   "ignorePatterns": ["node_modules"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "plugins": ["react", "unused-imports"],
   "rules": {
     "no-unused-vars": "off",
